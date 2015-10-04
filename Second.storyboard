@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f0w-cv-Ws4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="wB9-zC-cMp">
+            <objects>
+                <viewController storyboardIdentifier="SecondStoryFirst" id="Wvs-bH-uRY" customClass="SecondSBViewController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Pl-3M-3H4"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1R-EB-dtp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TWa-dY-YLF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SecondStroryBoardFistView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJh-w6-Vm0">
+                                <rect key="frame" x="96" y="127" width="408" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txz-Q0-fGa">
+                                <rect key="frame" x="225" y="236" width="151" height="30"/>
+                                <state key="normal" title="TransitionSegue"/>
+                                <connections>
+                                    <segue destination="YVy-ek-07q" kind="push" id="uaK-Be-Ka2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNf-D4-in7">
+                                <rect key="frame" x="230" y="285" width="141" height="30"/>
+                                <state key="normal" title="TransitionCode"/>
+                                <connections>
+                                    <action selector="secondViewCodeClick:" destination="Wvs-bH-uRY" eventType="touchUpInside" id="PQc-LK-90c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uNf-D4-in7" firstAttribute="centerX" secondItem="TWa-dY-YLF" secondAttribute="centerX" id="9zq-kv-y0u"/>
+                            <constraint firstItem="txz-Q0-fGa" firstAttribute="centerX" secondItem="TWa-dY-YLF" secondAttribute="centerX" id="MBX-n1-biD"/>
+                            <constraint firstItem="eJh-w6-Vm0" firstAttribute="top" secondItem="4Pl-3M-3H4" secondAttribute="bottom" constant="63" id="OtS-ME-rnX"/>
+                            <constraint firstItem="eJh-w6-Vm0" firstAttribute="centerX" secondItem="TWa-dY-YLF" secondAttribute="centerX" id="aXd-EY-LPM"/>
+                            <constraint firstItem="uNf-D4-in7" firstAttribute="top" secondItem="txz-Q0-fGa" secondAttribute="bottom" constant="19" id="fYO-94-dJe"/>
+                            <constraint firstItem="txz-Q0-fGa" firstAttribute="top" secondItem="eJh-w6-Vm0" secondAttribute="bottom" constant="44" id="tLI-gG-wqe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="fZz-9v-iFr"/>
+                    <connections>
+                        <outlet property="tranceCode" destination="uNf-D4-in7" id="p5n-M5-8J6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGZ-ee-aAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="198"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="VZT-Le-D33">
+            <objects>
+                <viewController storyboardIdentifier="SecondStorySecond" id="YVy-ek-07q" customClass="SecondSBSecondViewController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="omZ-qW-Nun"/>
+                        <viewControllerLayoutGuide type="bottom" id="UrD-bV-vSb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Re-21-Wkc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SecondStroryBoardSecondView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajk-cT-aIW">
+                                <rect key="frame" x="152" y="138" width="297" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DET-kh-Lef">
+                                <rect key="frame" x="242" y="237" width="116" height="30"/>
+                                <state key="normal" title="BackFirstView"/>
+                                <connections>
+                                    <action selector="backFirstButtomClick:" destination="YVy-ek-07q" eventType="touchUpInside" id="tPW-6V-eJe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DET-kh-Lef" firstAttribute="centerX" secondItem="1Re-21-Wkc" secondAttribute="centerX" id="4YH-lw-0ef"/>
+                            <constraint firstItem="DET-kh-Lef" firstAttribute="top" secondItem="Ajk-cT-aIW" secondAttribute="bottom" constant="34" id="O5Q-qt-Z5t"/>
+                            <constraint firstItem="Ajk-cT-aIW" firstAttribute="top" secondItem="omZ-qW-Nun" secondAttribute="bottom" constant="74" id="eDY-3z-BFQ"/>
+                            <constraint firstItem="Ajk-cT-aIW" firstAttribute="centerX" secondItem="1Re-21-Wkc" secondAttribute="centerX" id="vxu-ao-yRL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="jCs-ir-mHq"/>
+                    <connections>
+                        <outlet property="backFirstButtom" destination="DET-kh-Lef" id="afy-n4-E52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lap-gM-qVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LTk-bb-rN8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f0w-cv-Ws4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zsy-is-alH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wvs-bH-uRY" kind="relationship" relationship="rootViewController" id="FDs-9b-RII"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryJ-YA-1ge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="198"/>
+        </scene>
+    </scenes>
+</document>

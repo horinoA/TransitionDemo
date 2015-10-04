@@ -8,7 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  {
+    
+    @IBOutlet var segueButtom : UIButton!
+    @IBOutlet var modalButtom : UIButton!
+    @IBOutlet var otherSBButtom : UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,24 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func modalButtomClick(sender: AnyObject?){
+        if let third: UIViewController! = self.storyboard?.instantiateViewControllerWithIdentifier("ThirdView") as UIViewController!{
+            
+            third.modalTransitionStyle = .CoverVertical
+            third.modalPresentationStyle = .FullScreen
+            third.view.backgroundColor = UIColor.blueColor()
+            self.presentViewController(third, animated: true, completion: nil)
+        }
+        
+    }
+    
+    @IBAction func otherSBButtomClisc(sender:AnyObject?){
+        let storyboard: UIStoryboard = UIStoryboard(name: "Second", bundle: nil)
+        let next: UIViewController! = storyboard.instantiateInitialViewController() as UIViewController!
+        presentViewController(next, animated: true, completion: nil)
+    }
+    
+    
 }
 
