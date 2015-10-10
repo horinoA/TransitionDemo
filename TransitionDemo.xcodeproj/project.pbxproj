@@ -19,6 +19,7 @@
 		4A9924261BBFF4A400189B69 /* SecondSBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9924251BBFF4A400189B69 /* SecondSBViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		4A9924281BBFFC2C00189B69 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9924271BBFFC2C00189B69 /* ThirdViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		4ACF42B91BC10C6800A6E2A7 /* SecondSBSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF42B81BC10C6800A6E2A7 /* SecondSBSecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4AE5B7D61BC14E60002FEC7C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5B7D51BC14E60002FEC7C /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4A9924251BBFF4A400189B69 /* SecondSBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSBViewController.swift; sourceTree = "<group>"; };
 		4A9924271BBFFC2C00189B69 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4ACF42B81BC10C6800A6E2A7 /* SecondSBSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSBSecondViewController.swift; sourceTree = "<group>"; };
+		4AE5B7D51BC14E60002FEC7C /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				4A82C3431BBE572400420095 /* Assets.xcassets */,
 				4A82C3451BBE572400420095 /* LaunchScreen.storyboard */,
 				4A82C3481BBE572400420095 /* Info.plist */,
+				4AE5B7D51BC14E60002FEC7C /* TableViewController.swift */,
 			);
 			path = TransitionDemo;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A82C36B1BBE6FFA00420095 /* SecondViewController.swift in Sources */,
+				4AE5B7D61BC14E60002FEC7C /* TableViewController.swift in Sources */,
 				4A82C33F1BBE572400420095 /* ViewController.swift in Sources */,
 				4A9924281BBFFC2C00189B69 /* ThirdViewController.swift in Sources */,
 				4A82C33D1BBE572400420095 /* AppDelegate.swift in Sources */,
